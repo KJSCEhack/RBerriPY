@@ -59,11 +59,10 @@ CREATE TABLE `issue` (
   `type` varchar(100) NOT NULL,
   `loc` varchar(100) NOT NULL,
   `ward` text NOT NULL,
-  `uv` int(11) NOT NULL,
-  `dv` int(11) NOT NULL,
-  `timestamp` datetime NOT NULL,
+  `timestamp` timestamp NOT NULL,
   `sev` int(11) NOT NULL,
-  `status` varchar(100) NOT NULL
+  `status` varchar(100) NOT NULL,
+  `nfreviews` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
