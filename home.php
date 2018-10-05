@@ -118,7 +118,7 @@ include_once("includes/connection.php");
   }
   $success=0; 
 
-$sql="INSERT INTO user(name,email,loc,pass) values('$uname','$uemail',$uloc,'$hashPassword')";
+$sql="INSERT INTO user(name,email,loc,pass) values('$uname','$uemail','$uloc','$hashPassword')";
 if(mysqli_query($conn,$sql)) {
   echo '<script> alert("Sign Up successful") </script>';
   $success=1;
